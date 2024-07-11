@@ -7,7 +7,7 @@ services:
     name: ghost
     mountPath: /var/lib/ghost/content
     sizeGB: 2 #Feel free to change this to suit your needs.
-    plan: free
+  plan: free
   envVars:
     - key: database__client
       value: mysql
@@ -36,7 +36,7 @@ services:
     name: mysql
     mountPath: /var/lib/mysql
     sizeGB: 1
-    plan: free
+  plan: free
   envVars:
     - key: MYSQL_DATABASE
       value: ghostdb
